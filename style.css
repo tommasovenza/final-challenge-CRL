@@ -71,6 +71,10 @@ img {
 .menu-hidden {
     font-size: 1.8em;
 }
+.cross-hidden {
+    display: none;
+    font-size: 2.25em;
+}
 /* header end */
 
 /* above the fold */
@@ -178,6 +182,12 @@ footer h4 {
 }
 .width-js {
     width: 100%;
+}
+.active-js {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 /* media queries mobile first */
