@@ -161,6 +161,24 @@ footer h4 {
     margin-left: 5em;
 }
 
+/* javascript classes added at event click */
+.d-flex {
+    display: flex!important;
+    flex-direction: column;
+    font-size: 2em;
+}
+.margin-js {
+    margin: 0 0 1em 0!important;
+}
+.height-js {
+    height: 100vh;
+}
+.d-none-js {
+    display: none!important;
+}
+.width-js {
+    width: 100%;
+}
 
 /* media queries mobile first */
 @media (min-width: 200px) {
