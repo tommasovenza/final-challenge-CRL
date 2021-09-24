@@ -70,10 +70,12 @@ img {
 }
 .menu-hidden {
     font-size: 1.8em;
+    cursor: pointer;
 }
 .cross-hidden {
     display: none;
     font-size: 2.25em;
+    cursor: pointer;
 }
 /* header end */
 
@@ -132,6 +134,25 @@ img {
     color: #fff;
 }
 
+.back-to-top {
+    background-color: #2E323F;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    position: fixed;
+    right: 2%;
+    top: 85%;
+}
+.fa-chevron-up {
+    color: #A59678;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 28px;
+}
 footer {
     background-color: #3B4050;
     padding: 5em 0;
@@ -188,6 +209,12 @@ footer h4 {
     position: absolute;
     top: 1em;
     right: 1em;
+}
+
+/* animation on cross */
+.fa-times:hover {
+    transition: all .3s ease-out;
+    transform: rotate(45deg);
 }
 
 /* media queries mobile first */

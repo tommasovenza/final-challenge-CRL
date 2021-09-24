@@ -10,6 +10,7 @@ const mainNavLi = Array.from(document.querySelectorAll(".main-nav li"))
 
 const logo = document.querySelector(".logo")
 const menuHidden = document.querySelector(".menu-hidden")
+const buttonToTop = document.querySelector(".back-to-top")
 
 // event click on burgerMenu
 burgerMenu.addEventListener("click", () => {
@@ -38,3 +39,26 @@ crossHidden.addEventListener("click", () => {
     listItem.classList.remove("margin-js")
   })
 })
+
+buttonToTop.addEventListener("click", () => {
+  backToTop()
+})
+
+const showButton = () => {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    buttonToTop.style.display = "block"
+  } else {
+    buttonToTop.style.display = "none"
+  }
+}
+const backToTop = () => {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+}
+
+window.onscroll = function () {
+  showButton()
+}
