@@ -39,15 +39,15 @@ crossHidden.addEventListener("click", () => {
     listItem.classList.remove("margin-js")
   })
 })
-
+// event click on backToTop Button
 buttonToTop.addEventListener("click", () => {
   backToTop()
 })
 
 const showButton = () => {
   if (
-    document.body.scrollTop > 600 ||
-    document.documentElement.scrollTop > 600
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
   ) {
     buttonToTop.style.display = "block"
   } else {

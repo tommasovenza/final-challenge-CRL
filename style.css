@@ -7,6 +7,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.125rem;
 }
+html {
+    scroll-behavior: smooth;
+}
 h1, h2, h3, a {
     font-family: 'Oswald', sans-serif;
 }
@@ -143,6 +146,7 @@ img {
     position: fixed;
     right: 2%;
     top: 85%;
+    display: none;
 }
 .fa-chevron-up {
     color: #A59678;
